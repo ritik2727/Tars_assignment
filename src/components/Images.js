@@ -17,14 +17,14 @@ export default function Images() {
 
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkmode")
-      ? localStorage.getItem("darkmode") == "true"
+      ? localStorage.getItem("darkmode") === "true"
       : false
   );
   React.useEffect(() => {
     setInterval(() => {
       setDarkMode(
         localStorage.getItem("darkmode")
-          ? localStorage.getItem("darkmode") == "true"
+          ? localStorage.getItem("darkmode") === "true"
           : false
       );
     }, 100);
