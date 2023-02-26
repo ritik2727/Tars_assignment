@@ -1,11 +1,9 @@
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import React from "react";
-
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { FormControlLabel, Switch, Typography, Stack } from "@mui/material";
+import { Switch, Typography, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const AntSwitch = styled(Switch)(({ theme }) => ({

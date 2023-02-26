@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Masonry from "react-responsive-masonry";
-import "./ImageList.css";
 import ImgCard from "./ImgCard";
 import axios from "axios";
 import Header from "./Header";
@@ -13,9 +12,7 @@ export default function Images() {
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
   const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
-  const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
   const [page, setPage] = useState(1);
-  // const [imageData, setImageData] = useState([]);
   const [search, setSearch] = useState("");
 
   const [darkMode, setDarkMode] = useState(
